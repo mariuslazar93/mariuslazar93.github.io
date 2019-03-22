@@ -1,5 +1,6 @@
 import '../styles/sass/styles.scss';
 
+// Handles smooth scrolling from top-nav elements
 (function() {
   'use strict';
 
