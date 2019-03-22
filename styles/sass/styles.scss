@@ -1,0 +1,16 @@
+// ************************************
+// Main sass file used for imports
+// *************************************
+
+@import './mixins/_variables';
+@import './mixins/_typography';
+
+@import './shared/_utility';
+@import './shared/_buttons';
+@import './shared/_header';
+@import './shared/_base';
+
+@import './components/_decorated-title';
+@import './components/_projects';
+@import './components/_media-object';
+@import './components/_tech';

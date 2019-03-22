@@ -1,13 +1,13 @@
 {
-  "name": "moving-to-gulp",
+  "name": "marius-lazar-portofolio",
   "version": "1.0.0",
-  "description": "testing gulp",
-  "main": "index.html",
+  "description": "Marius Lazar Portofolio",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Marius Lazar",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
@@ -15,6 +15,8 @@
     "gulp-clean-css": "^3.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.4.1"
+    "gulp-sourcemaps": "^2.4.1",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.12.3"
   }
 }
