@@ -28,68 +28,14 @@ header {
     }
   }
   &__trigger {
-    position: fixed;
-    top: 12px;
-    left: 5px;
-    height: 37px;
-    padding: 5px;
-    z-index: 1000;
-    box-shadow: none;
-    border: none;
-    appearance: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-    &:focus {
-      outline: none;
-    }
-    span {
-      display: block;
-      position: relative;
-      width: 33px;
-      height: 4px;
-      background: $white;
-      &::after,
-      &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background: $white;
-        left: 0;
-      }
-      &::before {
-        top: -10px;
-        transition: background 0.2s ease, transform 0.2s ease, top 0.3s ease 0.2s;
-      }
-      &::after {
-        transition: background 0.2s ease, transform 0.2s ease, bottom 0.3s ease 0.2s;
-        bottom: -10px;
-      }
-    }
-    .open & {
-      span {
-        background: none;
-        &::before {
-          top: 0;
-          transform: rotate(45deg);
-          background: $black;
-          transition: background 0.2s ease, top 0.2s ease, transform 0.3s ease 0.2s;
-        }
-        &::after {
-          bottom: 0;
-          transform: rotate(-45deg);
-          background: $black;
-          transition: background 0.2s ease, bottom 0.2s ease, transform 0.3s ease 0.2s;
-        }
-      }
-    }
+    display: none;
   }
 }
 
 @media all and (max-width: $mobile) {
   .main-nav {
     position: fixed;
+    display: block;
     top: 0;
     left: 0;
     transform: translateX(-100%);
@@ -120,28 +66,66 @@ header {
         height: 2px;
       }
     }
-  }
-  .mobile-nav-bar {
-    height: 60px;
-    background: $diSerria;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-    .phone {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 5px;
-      transition: all 0.3s ease;
-      font-style: italic;
-      &:hover {
+    &__trigger {
+      display: block;
+      position: relative;
+      height: 37px;
+      padding: 5px;
+      z-index: 1000;
+      box-shadow: none;
+      border: none;
+      appearance: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      span {
+        display: block;
+        position: relative;
+        width: 33px;
+        height: 4px;
+        background: $white;
+        &::after,
         &::before {
-          display: none;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background: $white;
+          left: 0;
+        }
+        &::before {
+          top: -10px;
+          transition: background 0.2s ease, transform 0.2s ease, top 0.3s ease 0.2s;
+        }
+        &::after {
+          transition: background 0.2s ease, transform 0.2s ease, bottom 0.3s ease 0.2s;
+          bottom: -10px;
+        }
+      }
+      .open & {
+        span {
+          background: none;
+          &::before {
+            top: 0;
+            transform: rotate(45deg);
+            background: $black;
+            transition: background 0.2s ease, top 0.2s ease, transform 0.3s ease 0.2s;
+          }
+          &::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+            background: $black;
+            transition: background 0.2s ease, bottom 0.2s ease, transform 0.3s ease 0.2s;
+          }
         }
       }
     }
+  }
+
+  .main-nav-wrapper.spacer-bottom-xl {
+    margin-bottom: 0;
   }
 }
