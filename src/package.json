@@ -9,8 +9,8 @@
   "author": "Marius Lazar",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "parcel-bundler": "^1.12.3",
+    "node-sass": "^4.13.1",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.26.3"
   }
 }
