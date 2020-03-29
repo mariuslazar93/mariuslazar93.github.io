@@ -13,8 +13,8 @@ body {
 h1 {
   font-weight: 700;
   font-family: $serif;
-  font-size: 5.4rem;
-  line-height: 5.4rem;
+  font-size: 3rem;
+  line-height: 3rem;
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -60,4 +60,9 @@ p {
   h2 {
     font-size: 1.6rem;
   }
+}
+
+.highlight {
+  color: $accent-color;
+  font-weight: bold;
 }

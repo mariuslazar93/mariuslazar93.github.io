@@ -68,8 +68,8 @@ header {
     }
     &__trigger {
       display: block;
-      position: relative;
-      height: 37px;
+      position: absolute;
+      right: 0;
       padding: 5px;
       z-index: 1000;
       box-shadow: none;
