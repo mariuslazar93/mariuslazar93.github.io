@@ -9,7 +9,7 @@
   "author": "Marius Lazar",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.3"
   }
